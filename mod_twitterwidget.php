@@ -8,15 +8,13 @@
 // no direct access
 defined('_JEXEC') or die;
 
-// Include helper.php once
-require_once dirname(__FILE__).'/helper.php';
-if( $params->get('loadcss', 1) == 1){
-    JHTML::stylesheet('TWITTERWIDGET.css', '/modules/mod_TWITTERWIDGET/');
+$url = $params->get('url', '/modules/mod_twitterwidget/js/twitterwidget.js');
+$moduleclass_sfx = $params->get('moduleclass_sfx', NULL);
+
+//Try detect if is not one absolute URL. If is, will try to add as relative and respect the base path
+//Good for Joomla installed on subdirectory
+if(strpos($url, 'http:') === FALSE){
+    $url = JURI::base(true) . $url;
 }
 
-$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
-$randonresult = getRandonText();
-
-require JModuleHelper::getLayoutPath('mod_TWITTERWIDGET', $params->get('layout', 'default'));
-
-
+require JModuleHelper::getLayoutPath('mod_twitterwidget', 'default');

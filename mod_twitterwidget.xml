@@ -3,18 +3,17 @@
 	type="module"
 	method="upgrade"
 	version="1.6">
-	<name>mod_twitterwidget</name>
+	<name>twitterwidget</name>
 	<author>Emerson Rocha Luiz</author>
 	<creationDate>2011-07-30</creationDate>
 	<copyright>Copyright (C) 2005 - 2011 Webdesign Assessoria em Tecnologia da Informacao.</copyright>
 	<license>GNU General Public License version 3</license>
 	<authorEmail>emerson@webdesign.eng.br</authorEmail>
 	<authorUrl>http://fititnt.org</authorUrl>
-	<version>0.1alpha</version>
-	<description>MOD_TWITTERWIDGET_XML_DESCRIPTION</description>
+	<version>0.2beta</version>
+	<description>MOD_TWITTERWIDGET_DESCRIPTION</description>
 	<files>
 		<filename module="mod_twitterwidget">mod_twitterwidget.php</filename>
-                <filename>helper.php</filename>
 		<filename>index.html</filename>
 		<folder>tmpl</folder>
                 <folder>js</folder>
@@ -24,53 +23,32 @@
 		<language tag="en-GB">en-GB/en-GB.mod_twitterwidget.ini</language>
 		<language tag="en-GB">en-GB/en-GB.mod_twitterwidget.sys.ini</language>	
 	</languages>
-
 		
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
 				<field
-					name="showauthor"
-					type="radio"
-					label="MOD_TWITTERWIDGET_SHOW_AUTHOR"
-					description="MOD_TWITTERWIDGET_SHOW_AUTHOR_DESC"
-					default="1">
-					<option
-						value="0">JNo</option>
-					<option
-						value="1">JYes</option>
+					name="url"
+					type="text"
+                                        size="60"
+                                        max="255"
+					label="MOD_TWITTERWIDGET_URL_LABEL"
+					description="MOD_TWITTERWIDGET_URL_DESC"
+					default="/modules/mod_twitterwidget/js/twitterwidget.js">
 				</field>
                                 <field
-					name="showtitle"
-					type="radio"
-					label="MOD_TWITTERWIDGET_SHOW_TITLE"
-					description="MOD_TWITTERWIDGET_SHOW_TITLE_DESC"
-					default="1">
-					<option
-						value="0">JNo</option>
-					<option
-						value="1">JYes</option>
+					name="moduleclass_sfx"
+					type="text"
+					label="MOD_TWITTERWIDGET_MODULECLASS_SFX_LABEL"
+					description="MOD_TWITTERWIDGET_MODULECLASS_SFX_DESC"
+					default="">
 				</field>
                                 <field
-					name="loadcss"
-					type="radio"
-					label="MOD_TWITTERWIDGET_LOAD_DEFAULT_CSS"
-					description="MOD_TWITTERWIDGET_LOAD_DEFAULT_CSS_DESC"
-					default="1">
-					<option
-						value="0">JNo</option>
-					<option
-						value="1">JYes</option>
-				</field>
-					
-			</fieldset>
-			<fieldset
-				name="advanced">
-				<field
 					name="layout"
 					type="modulelayout"
 					label="JFIELD_ALT_LAYOUT_LABEL"
-					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC">
+                                </field>					
 			</fieldset>
 		</fields>
 	</config>

@@ -9,6 +9,8 @@ Author: Emerson Rocha Luiz - @fititnt - emerson@webdesign.eng.br
 -------   @todo   -------
 
 ------- Changelog -------
+2011-07-31 0.2beta
+- Now works. Ready for public test
 
 2011-07-30: 0.1alpha
 - Start. Based on mod_werandonmessage from @fititnt
