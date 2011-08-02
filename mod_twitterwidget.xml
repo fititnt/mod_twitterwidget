@@ -10,18 +10,20 @@
 	<license>GNU General Public License version 3</license>
 	<authorEmail>emerson@webdesign.eng.br</authorEmail>
 	<authorUrl>http://fititnt.org</authorUrl>
-	<version>0.2beta</version>
+	<version>1.0RC1</version>
 	<description>MOD_TWITTERWIDGET_DESCRIPTION</description>
 	<files>
 		<filename module="mod_twitterwidget">mod_twitterwidget.php</filename>
 		<filename>index.html</filename>
 		<folder>tmpl</folder>
                 <folder>js</folder>
-                <folder>languages</folder><!-- This makes one copy of languages. Is not really necessary-->
+                <folder>languages</folder>
 	</files>
 	<languages folder="languages">
 		<language tag="en-GB">en-GB/en-GB.mod_twitterwidget.ini</language>
-		<language tag="en-GB">en-GB/en-GB.mod_twitterwidget.sys.ini</language>	
+		<language tag="en-GB">en-GB/en-GB.mod_twitterwidget.sys.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.mod_twitterwidget.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.mod_twitterwidget.sys.ini</language>	
 	</languages>
 		
 	<config>
@@ -42,13 +44,7 @@
 					label="MOD_TWITTERWIDGET_MODULECLASS_SFX_LABEL"
 					description="MOD_TWITTERWIDGET_MODULECLASS_SFX_DESC"
 					default="">
-				</field>
-                                <field
-					name="layout"
-					type="modulelayout"
-					label="JFIELD_ALT_LAYOUT_LABEL"
-					description="JFIELD_ALT_MODULE_LAYOUT_DESC">
-                                </field>					
+				</field>					
 			</fieldset>
 		</fields>
 	</config>
