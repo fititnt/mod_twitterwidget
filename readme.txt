@@ -31,3 +31,11 @@ one especific element, instead of directly add javascript with <script> tag insi
 
 2011-07-30: 0.1alpha
 - Start. Based on mod_werandonmessage from @fititnt
+
+CHANGELOG LEGEND:
++ Added
+- Removed
+^ Updated
+* Bugfix
+# Security Fix
+! Relevant message
