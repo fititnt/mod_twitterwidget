@@ -2,7 +2,7 @@ Joomla 1.6+ Module Twitter Widget
 Simple module that add oficial Twitter Widget via external file, instead of inline javascript
 Author: Emerson Rocha Luiz - @fititnt - emerson@webdesign.eng.br
 
-------- Basic usage -------
+----------------------------------- How to use ---------------------------------
 
 The idea is to allow a module from loading quickly over a slightly larger work of the developer. 
 Instead of allowing settings and generate inline javascript, just add a javascript file exactly 
@@ -15,14 +15,14 @@ To know exactly the parameters you can use the file, visit https://twitter.com/a
 and go on the 'My Website' and use the result as a basis to change the generated javascript file. Use as 
 the base '/modules/mod_twitterwidget/js/twitterwidget.js'"
 
-------- Important -------
+--------------------------- Instalation & Dependences --------------------------
 
--------   @todo   -------
+-------------------------------------- Todo ------------------------------------
 
 - Try one workaround to load javascript at the botton of html file and make make it change from there
 one especific element, instead of directly add javascript with <script> tag inside the module.
 
-------- Changelog -------
+----------------------------------- Changelog ----------------------------------
 2011-08-02: 1.0RC1
 - Added pt-BR translation
 
